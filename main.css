@@ -1,0 +1,12 @@
+
+.gameBoard{
+    display: grid;
+}
+
+.box{
+    padding: 80px;
+    float: left;
+    border:solid;
+    background-color: grey;
+}
+
