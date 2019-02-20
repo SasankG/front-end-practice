@@ -1,8 +1,4 @@
-
-let newArr = new Array(100);
-for (var i = 1; i <= 100; i++) {
-    newArr.push(i)
-}
+// Random JS questions
 // FizzBuzz - common introductory question
 fizzbuzz = (arr) => {
     for (var i = 0; i <= 100; i++) {
@@ -25,7 +21,7 @@ fizzbuzz = (arr) => {
 
     }
 }
-fizzbuzz();
+//fizzbuzz();
 
 // Simple String Manipulations 
 // Flip sentence until each word is reversed
@@ -74,3 +70,24 @@ function palindromeChecker(word){
         console.log('They are not palindromes')
     }
 }
+
+// Padded Numbers
+// Add 0 to numbers in an array, double  digit integers remain the same
+
+let myArr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+
+function padder(arr){
+    let padArr = [];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i]<10){
+            padArr.push('0' + arr[i])
+        } else{
+            padArr.push(arr[i])
+        }
+    }
+    console.log(padArr);
+}
+
+// What is '===' and why is it used
+// -> ===: is a strict and type comparison, it compares both the primary type AND the content of the operands 
+
